@@ -1,0 +1,23 @@
+#This Query will allow consumer to Query retrieve data and decide on the response
+type Query {
+    card(id : Int!) : CardResponse
+#    findAllCard: [Card]!
+}
+
+#Card the defined type for the Query
+type Card {
+    id : Int!
+    title: String
+    creatorName : String
+    imageUrl : String
+}
+
+#CardResponse is the defined type for the Query response.
+type CardResponse {
+    id : Int!
+    title : String
+    creatorName : String
+    imageUrl : String
+}
+
+

@@ -1,0 +1,13 @@
+#This Graph QL Mutation should amend the database
+type Mutation {
+    createCard(createCardRequest : CreateCardRequest) : CardResponse
+}
+
+#Sample request the consumer may send
+input CreateCardRequest {
+
+    title : String
+    creatorName : String
+    imageUrl : String
+
+}
